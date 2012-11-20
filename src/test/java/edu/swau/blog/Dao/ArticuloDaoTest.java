@@ -151,4 +151,19 @@ public class ArticuloDaoTest {
      assertNotNull(articulos);
      assertTrue(articulos.size() >= 2);
    }
+
+    /**
+     * Test of obtiene method, of class ArticuloDao.
+     */
+    @Test
+    public void testObtiene() {
+        System.out.println("obtiene");
+        Long articuloId = null;
+        ArticuloDao instance = new ArticuloDao();
+        Articulo expResult = null;
+        Articulo result = instance.obtiene(articuloId);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
 }
